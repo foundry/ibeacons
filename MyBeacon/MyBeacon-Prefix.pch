@@ -15,6 +15,9 @@
     #import <Foundation/Foundation.h>
 #endif
 
-
+// this UUID and identifier is used for advertising
+// and for listening when not using ProximityKit.
+// When testing with ProximityKit this is only used for
+// advertising, but should agree with the data the PK Kit.
 #define MB_UUID @"2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6"
-#define MB_IDENTIFIER @"com.boppl.bar"
+#define MB_IDENTIFIER @"test identifier"
