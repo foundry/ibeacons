@@ -7,12 +7,15 @@
 //
 
 #import "MBAppDelegate.h"
-
+@interface MBAppDelegate()
+@end
 @implementation MBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    //_locationManager = [[CLLocationManager alloc] init];
+    //_locationManager.delegate = self;
+    
     return YES;
 }
 							
@@ -42,5 +45,14 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    NSLog(@"%s",__func__);
+    NSLog(@"%@",notification);
+}
+
+
+
 
 @end

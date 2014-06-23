@@ -1,23 +1,104 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cAU-hY-W03">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="MBViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BGN-ID-HQq"/>
+                        <viewControllerLayoutGuide type="bottom" id="dn8-Hx-0uS"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signal-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qea-6r-VOy">
+                                <rect key="frame" x="50" y="174" width="220" height="220"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="SZm-zD-Pgi"/>
+                                    <constraint firstAttribute="width" constant="220" id="d4r-LB-JiB"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gum-8M-pag">
+                                <rect key="frame" x="105" y="402" width="111" height="30"/>
+                                <state key="normal" title="start advertising">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="advertisingPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2Ws-O1-19N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khb-6I-Qu9">
+                                <rect key="frame" x="114" y="144" width="92" height="30"/>
+                                <state key="normal" title="start listening">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="listeningPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7br-WL-Sll"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fUP-EN-0z0">
+                                <rect key="frame" x="99" y="255" width="122" height="58"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                <color key="textColor" red="0.9803922176361084" green="0.015686275437474251" blue="0.17647059261798859" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="gum-8M-pag" secondAttribute="centerX" id="FXo-rC-loi"/>
+                            <constraint firstItem="gum-8M-pag" firstAttribute="top" secondItem="Qea-6r-VOy" secondAttribute="bottom" constant="8" id="MSa-ab-Qml"/>
+                            <constraint firstAttribute="centerX" secondItem="khb-6I-Qu9" secondAttribute="centerX" id="OWM-sg-9qm"/>
+                            <constraint firstItem="fUP-EN-0z0" firstAttribute="centerX" secondItem="Qea-6r-VOy" secondAttribute="centerX" id="R01-9h-cIT"/>
+                            <constraint firstAttribute="centerY" secondItem="Qea-6r-VOy" secondAttribute="centerY" id="TNo-BZ-7Hh"/>
+                            <constraint firstItem="fUP-EN-0z0" firstAttribute="centerY" secondItem="Qea-6r-VOy" secondAttribute="centerY" id="VlN-eK-4WO"/>
+                            <constraint firstAttribute="centerX" secondItem="Qea-6r-VOy" secondAttribute="centerX" id="X1a-qW-tOL"/>
+                            <constraint firstAttribute="width" secondItem="fUP-EN-0z0" secondAttribute="width" id="ovi-Mb-FG8"/>
+                            <constraint firstItem="khb-6I-Qu9" firstAttribute="top" secondItem="Qea-6r-VOy" secondAttribute="top" constant="-30" id="vp4-oo-nXx"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="HYt-E0-7pm"/>
+                    <connections>
+                        <outlet property="advertising" destination="gum-8M-pag" id="8Th-la-cju"/>
+                        <outlet property="foundLabel" destination="fUP-EN-0z0" id="5lc-Ic-3EH"/>
+                        <outlet property="listening" destination="khb-6I-Qu9" id="Izc-RV-vQE"/>
+                        <outlet property="radarView" destination="Qea-6r-VOy" id="4xs-mU-l1U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="268" y="138"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="k7W-BB-sNy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="cAU-hY-W03" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="25o-Td-ngu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="qb8-lQ-a0z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ml-2E-Efq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-320" y="147"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="signal-2.png" width="512" height="512"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

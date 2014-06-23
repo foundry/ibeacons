@@ -14,3 +14,7 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+
+#define MB_UUID @"2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6"
+#define MB_IDENTIFIER @"com.boppl.bar"
