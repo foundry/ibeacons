@@ -9,5 +9,5 @@ To use ProximityKit install using cocoaPods from included podFile (`pod install`
 
 //TO DO
 Blog/wiki explanation  
-Get local notifications to work
+Get local notifications to work  
 Reactivate everything
