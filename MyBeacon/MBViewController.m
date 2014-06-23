@@ -2,7 +2,7 @@
 //  MBViewController.m
 //  MyBeacon
 //
-//  Created by jonathan on 17/06/2014.
+//  Created by foundry on 17/06/2014.
 //  Copyright (c) 2014 com.boppl. All rights reserved.
 //
 
@@ -48,14 +48,7 @@ typedef enum {
 
     [self.listenerClass instance].delegate = self;
     [MBBeaconAdvertiser instance].delegate = self;
-    //[MB instance].delegate = self;
    
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)advertisingPressed:(UIButton*)sender {
@@ -173,12 +166,10 @@ typedef enum {
         CGFloat green = (-beacon.rssi/100.0f);
         CGFloat blue = beacon.proximity/4.0f;
         colour = [UIColor colorWithRed:red green:green blue:blue alpha:1.0];
-        //  colour = [UIColor colorWithHue:red saturation:green brightness:blue alpha:1.0];
         NSLog(@"red:%.2f,green:%.2f,blue:%.2f",red,green,blue);
         
     }
     self.colour  = colour;
-    //if (self.foundLabel.text)[self animateFound];
     [self animateFound];
 
 }
