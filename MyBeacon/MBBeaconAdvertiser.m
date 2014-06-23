@@ -117,6 +117,6 @@
 //}
 
 - (void) peripheralManagerIsReadyToUpdateSubscribers:(CBPeripheralManager *)peripheral {
-    NSLog(@"%s %@, %ld",__func__,peripheral,peripheral.state);
+    NSLog(@"%s %@, %d",__func__,peripheral,peripheral.state);
 }
 @end

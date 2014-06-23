@@ -1,2 +1,1 @@
-pod 'KCSIBeacon'
 pod 'ProximityKit'

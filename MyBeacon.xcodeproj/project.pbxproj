@@ -17,16 +17,10 @@
 		AB2C1AAC195095F4003D8BD4 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2C1AAA195095F4003D8BD4 /* Main_iPad.storyboard */; };
 		AB2C1AAF195095F4003D8BD4 /* MBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2C1AAE195095F4003D8BD4 /* MBViewController.m */; };
 		AB2C1AB1195095F4003D8BD4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2C1AB0195095F4003D8BD4 /* Images.xcassets */; };
-		AB2C1AB8195095F4003D8BD4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2C1AB7195095F4003D8BD4 /* XCTest.framework */; };
-		AB2C1AB9195095F4003D8BD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2C1A95195095F4003D8BD4 /* Foundation.framework */; };
-		AB2C1ABA195095F4003D8BD4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2C1A99195095F4003D8BD4 /* UIKit.framework */; };
-		AB2C1AC2195095F4003D8BD4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB2C1AC0195095F4003D8BD4 /* InfoPlist.strings */; };
-		AB2C1AC4195095F4003D8BD4 /* MyBeaconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2C1AC3195095F4003D8BD4 /* MyBeaconTests.m */; };
 		AB2C1ACF19509624003D8BD4 /* MBBeaconAdvertiser.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2C1ACE19509624003D8BD4 /* MBBeaconAdvertiser.m */; };
 		AB2C1AD119509C4C003D8BD4 /* icons-radar-orange.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB2C1AD019509C4C003D8BD4 /* icons-radar-orange.jpg */; };
 		AB2C1AD41950A293003D8BD4 /* black-wifi-icon-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2C1AD21950A293003D8BD4 /* black-wifi-icon-hi.png */; };
 		AB2C1AD51950A293003D8BD4 /* signal-2.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2C1AD31950A293003D8BD4 /* signal-2.png */; };
-		AB2C1AD81950B88B003D8BD4 /* BPBeaconListener.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2C1AD71950B88B003D8BD4 /* BPBeaconListener.m */; };
 		AB2C1AE01950C10F003D8BD4 /* signal-2-76.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2C1ADE1950C10F003D8BD4 /* signal-2-76.png */; };
 		AB2C1AE11950C10F003D8BD4 /* signal-2-152.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2C1ADF1950C10F003D8BD4 /* signal-2-152.png */; };
 		AB2E67B91953038300364E86 /* ProximityKit.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB2E67B81953038300364E86 /* ProximityKit.plist */; };
@@ -37,16 +31,6 @@
 		AB8237011952010500822F91 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8237001952010500822F91 /* MapKit.framework */; };
 		DED57A24163F4D3299E8B3CC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B4A370FFB64715A3A30D9D /* libPods.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AB2C1ABB195095F4003D8BD4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AB2C1A8A195095F4003D8BD4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AB2C1A91195095F4003D8BD4;
-			remoteInfo = MyBeacon;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		54B4A370FFB64715A3A30D9D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,25 +49,19 @@
 		AB2C1AAD195095F4003D8BD4 /* MBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBViewController.h; sourceTree = "<group>"; };
 		AB2C1AAE195095F4003D8BD4 /* MBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBViewController.m; sourceTree = "<group>"; };
 		AB2C1AB0195095F4003D8BD4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AB2C1AB6195095F4003D8BD4 /* MyBeaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyBeaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2C1AB7195095F4003D8BD4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		AB2C1ABF195095F4003D8BD4 /* MyBeaconTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyBeaconTests-Info.plist"; sourceTree = "<group>"; };
-		AB2C1AC1195095F4003D8BD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AB2C1AC3195095F4003D8BD4 /* MyBeaconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyBeaconTests.m; sourceTree = "<group>"; };
 		AB2C1ACD19509624003D8BD4 /* MBBeaconAdvertiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBBeaconAdvertiser.h; sourceTree = "<group>"; };
 		AB2C1ACE19509624003D8BD4 /* MBBeaconAdvertiser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBBeaconAdvertiser.m; sourceTree = "<group>"; };
 		AB2C1AD019509C4C003D8BD4 /* icons-radar-orange.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "icons-radar-orange.jpg"; sourceTree = "<group>"; };
 		AB2C1AD21950A293003D8BD4 /* black-wifi-icon-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "black-wifi-icon-hi.png"; sourceTree = "<group>"; };
 		AB2C1AD31950A293003D8BD4 /* signal-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal-2.png"; sourceTree = "<group>"; };
-		AB2C1AD61950B88B003D8BD4 /* BPBeaconListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPBeaconListener.h; sourceTree = "<group>"; };
-		AB2C1AD71950B88B003D8BD4 /* BPBeaconListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPBeaconListener.m; sourceTree = "<group>"; };
-		AB2C1AD91950C00A003D8BD4 /* signal-2-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "signal-2-120.png"; path = "MyBeacon/signal-2-120.png"; sourceTree = "<group>"; };
-		AB2C1ADA1950C013003D8BD4 /* signal-2-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "signal-2-80.png"; path = "MyBeacon/signal-2-80.png"; sourceTree = "<group>"; };
-		AB2C1ADB1950C023003D8BD4 /* signal-2-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "signal-2-58.png"; path = "MyBeacon/signal-2-58.png"; sourceTree = "<group>"; };
-		AB2C1ADD1950C100003D8BD4 /* signal-2-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "signal-2-40.png"; path = "MyBeacon/signal-2-40.png"; sourceTree = "<group>"; };
-		AB2C1ADE1950C10F003D8BD4 /* signal-2-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "signal-2-76.png"; path = "MyBeacon/signal-2-76.png"; sourceTree = "<group>"; };
-		AB2C1ADF1950C10F003D8BD4 /* signal-2-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "signal-2-152.png"; path = "MyBeacon/signal-2-152.png"; sourceTree = "<group>"; };
-		AB2C1AE21950C13C003D8BD4 /* signal-2-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "signal-2-152.png"; path = "MyBeacon/signal-2-152.png"; sourceTree = "<group>"; };
+		AB2C1AD91950C00A003D8BD4 /* signal-2-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal-2-120.png"; sourceTree = "<group>"; };
+		AB2C1ADA1950C013003D8BD4 /* signal-2-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal-2-80.png"; sourceTree = "<group>"; };
+		AB2C1ADB1950C023003D8BD4 /* signal-2-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal-2-58.png"; sourceTree = "<group>"; };
+		AB2C1ADD1950C100003D8BD4 /* signal-2-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal-2-40.png"; sourceTree = "<group>"; };
+		AB2C1ADE1950C10F003D8BD4 /* signal-2-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal-2-76.png"; sourceTree = "<group>"; };
+		AB2C1ADF1950C10F003D8BD4 /* signal-2-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal-2-152.png"; sourceTree = "<group>"; };
+		AB2C1AE21950C13C003D8BD4 /* signal-2-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal-2-152.png"; sourceTree = "<group>"; };
 		AB2E67B81953038300364E86 /* ProximityKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProximityKit.plist; sourceTree = "<group>"; };
 		AB2E67BA1953041400364E86 /* MBPKBeaconListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBPKBeaconListener.h; sourceTree = "<group>"; };
 		AB2E67BB1953041400364E86 /* MBPKBeaconListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBPKBeaconListener.m; sourceTree = "<group>"; };
@@ -110,31 +88,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB2C1AB3195095F4003D8BD4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB2C1AB8195095F4003D8BD4 /* XCTest.framework in Frameworks */,
-				AB2C1ABA195095F4003D8BD4 /* UIKit.framework in Frameworks */,
-				AB2C1AB9195095F4003D8BD4 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		AB2C1A89195095F4003D8BD4 = {
 			isa = PBXGroup;
 			children = (
-				AB2C1AE21950C13C003D8BD4 /* signal-2-152.png */,
-				AB2C1ADD1950C100003D8BD4 /* signal-2-40.png */,
-				AB2C1ADE1950C10F003D8BD4 /* signal-2-76.png */,
-				AB2C1ADF1950C10F003D8BD4 /* signal-2-152.png */,
-				AB2C1ADB1950C023003D8BD4 /* signal-2-58.png */,
-				AB2C1ADA1950C013003D8BD4 /* signal-2-80.png */,
-				AB2C1AD91950C00A003D8BD4 /* signal-2-120.png */,
 				AB2C1A9B195095F4003D8BD4 /* MyBeacon */,
-				AB2C1ABD195095F4003D8BD4 /* MyBeaconTests */,
 				AB2C1A94195095F4003D8BD4 /* Frameworks */,
 				AB2C1A93195095F4003D8BD4 /* Products */,
 				BEB732F689074C87A0F8699B /* Pods.xcconfig */,
@@ -145,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				AB2C1A92195095F4003D8BD4 /* MyBeacon.app */,
-				AB2C1AB6195095F4003D8BD4 /* MyBeaconTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,10 +125,6 @@
 		AB2C1A9B195095F4003D8BD4 /* MyBeacon */ = {
 			isa = PBXGroup;
 			children = (
-				AB2E67B51953022200364E86 /* MBPKBeackon */,
-				AB404A6A1952E3A6004A996B /* assets */,
-				AB404A681952E38B004A996B /* standalone */,
-				AB2C1ADC1950C05D003D8BD4 /* iPad */,
 				AB2C1AA4195095F4003D8BD4 /* MBAppDelegate.h */,
 				AB2C1AA5195095F4003D8BD4 /* MBAppDelegate.m */,
 				AB3E17E31957003100452F7D /* MBPKHelpers.h */,
@@ -180,7 +135,12 @@
 				AB2C1AAA195095F4003D8BD4 /* Main_iPad.storyboard */,
 				AB2C1AAD195095F4003D8BD4 /* MBViewController.h */,
 				AB2C1AAE195095F4003D8BD4 /* MBViewController.m */,
+				AB2C1ACD19509624003D8BD4 /* MBBeaconAdvertiser.h */,
+				AB2C1ACE19509624003D8BD4 /* MBBeaconAdvertiser.m */,
+				AB2E67B51953022200364E86 /* ProximityKitListener */,
+				AB404A681952E38B004A996B /* CoreLocationListener */,
 				AB2C1AB0195095F4003D8BD4 /* Images.xcassets */,
+				AB404A6A1952E3A6004A996B /* assets */,
 				AB2C1A9C195095F4003D8BD4 /* Supporting Files */,
 			);
 			path = MyBeacon;
@@ -197,57 +157,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AB2C1ABD195095F4003D8BD4 /* MyBeaconTests */ = {
-			isa = PBXGroup;
-			children = (
-				AB2C1AC3195095F4003D8BD4 /* MyBeaconTests.m */,
-				AB2C1ABE195095F4003D8BD4 /* Supporting Files */,
-			);
-			path = MyBeaconTests;
-			sourceTree = "<group>";
-		};
-		AB2C1ABE195095F4003D8BD4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AB2C1ABF195095F4003D8BD4 /* MyBeaconTests-Info.plist */,
-				AB2C1AC0195095F4003D8BD4 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AB2C1ADC1950C05D003D8BD4 /* iPad */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = iPad;
-			sourceTree = "<group>";
-		};
-		AB2E67B51953022200364E86 /* MBPKBeackon */ = {
+		AB2E67B51953022200364E86 /* ProximityKitListener */ = {
 			isa = PBXGroup;
 			children = (
 				AB2E67B81953038300364E86 /* ProximityKit.plist */,
 				AB2E67BA1953041400364E86 /* MBPKBeaconListener.h */,
 				AB2E67BB1953041400364E86 /* MBPKBeaconListener.m */,
 			);
-			name = MBPKBeackon;
+			name = ProximityKitListener;
 			sourceTree = "<group>";
 		};
-		AB404A681952E38B004A996B /* standalone */ = {
+		AB404A681952E38B004A996B /* CoreLocationListener */ = {
 			isa = PBXGroup;
 			children = (
 				AB8236FD1951F54300822F91 /* MBBeaconListener.h */,
 				AB8236FE1951F54300822F91 /* MBBeaconListener.m */,
-				AB2C1AD61950B88B003D8BD4 /* BPBeaconListener.h */,
-				AB2C1AD71950B88B003D8BD4 /* BPBeaconListener.m */,
-				AB2C1ACD19509624003D8BD4 /* MBBeaconAdvertiser.h */,
-				AB2C1ACE19509624003D8BD4 /* MBBeaconAdvertiser.m */,
 			);
-			name = standalone;
+			name = CoreLocationListener;
 			sourceTree = "<group>";
 		};
 		AB404A6A1952E3A6004A996B /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				AB2C1AE21950C13C003D8BD4 /* signal-2-152.png */,
+				AB2C1ADD1950C100003D8BD4 /* signal-2-40.png */,
+				AB2C1ADE1950C10F003D8BD4 /* signal-2-76.png */,
+				AB2C1ADF1950C10F003D8BD4 /* signal-2-152.png */,
+				AB2C1ADB1950C023003D8BD4 /* signal-2-58.png */,
+				AB2C1ADA1950C013003D8BD4 /* signal-2-80.png */,
+				AB2C1AD91950C00A003D8BD4 /* signal-2-120.png */,
 				AB2C1AD21950A293003D8BD4 /* black-wifi-icon-hi.png */,
 				AB2C1AD31950A293003D8BD4 /* signal-2.png */,
 				AB2C1AD019509C4C003D8BD4 /* icons-radar-orange.jpg */,
@@ -277,24 +215,6 @@
 			productReference = AB2C1A92195095F4003D8BD4 /* MyBeacon.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AB2C1AB5195095F4003D8BD4 /* MyBeaconTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AB2C1ACA195095F4003D8BD4 /* Build configuration list for PBXNativeTarget "MyBeaconTests" */;
-			buildPhases = (
-				AB2C1AB2195095F4003D8BD4 /* Sources */,
-				AB2C1AB3195095F4003D8BD4 /* Frameworks */,
-				AB2C1AB4195095F4003D8BD4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AB2C1ABC195095F4003D8BD4 /* PBXTargetDependency */,
-			);
-			name = MyBeaconTests;
-			productName = MyBeaconTests;
-			productReference = AB2C1AB6195095F4003D8BD4 /* MyBeaconTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -315,9 +235,6 @@
 							};
 						};
 					};
-					AB2C1AB5195095F4003D8BD4 = {
-						TestTargetID = AB2C1A91195095F4003D8BD4;
-					};
 				};
 			};
 			buildConfigurationList = AB2C1A8D195095F4003D8BD4 /* Build configuration list for PBXProject "MyBeacon" */;
@@ -334,7 +251,6 @@
 			projectRoot = "";
 			targets = (
 				AB2C1A91195095F4003D8BD4 /* MyBeacon */,
-				AB2C1AB5195095F4003D8BD4 /* MyBeaconTests */,
 			);
 		};
 /* End PBXProject section */
@@ -354,14 +270,6 @@
 				AB2C1AA9195095F4003D8BD4 /* Main_iPhone.storyboard in Resources */,
 				AB2C1AA0195095F4003D8BD4 /* InfoPlist.strings in Resources */,
 				AB2C1AD51950A293003D8BD4 /* signal-2.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB2C1AB4195095F4003D8BD4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB2C1AC2195095F4003D8BD4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,30 +318,13 @@
 				AB8236FF1951F54300822F91 /* MBBeaconListener.m in Sources */,
 				AB2C1AAF195095F4003D8BD4 /* MBViewController.m in Sources */,
 				AB2C1AA6195095F4003D8BD4 /* MBAppDelegate.m in Sources */,
-				AB2C1AD81950B88B003D8BD4 /* BPBeaconListener.m in Sources */,
 				AB3E17E51957003100452F7D /* MBPKHelpers.m in Sources */,
 				AB2E67BF1953062400364E86 /* MBCLHelpers.m in Sources */,
 				AB2E67BC1953041400364E86 /* MBPKBeaconListener.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB2C1AB2195095F4003D8BD4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB2C1AC4195095F4003D8BD4 /* MyBeaconTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AB2C1ABC195095F4003D8BD4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AB2C1A91195095F4003D8BD4 /* MyBeacon */;
-			targetProxy = AB2C1ABB195095F4003D8BD4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AB2C1A9E195095F4003D8BD4 /* InfoPlist.strings */ = {
@@ -458,14 +349,6 @@
 				AB2C1AAB195095F4003D8BD4 /* Base */,
 			);
 			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		AB2C1AC0195095F4003D8BD4 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AB2C1AC1195095F4003D8BD4 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -575,48 +458,6 @@
 			};
 			name = Release;
 		};
-		AB2C1ACB195095F4003D8BD4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyBeacon.app/MyBeacon";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MyBeacon/MyBeacon-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "MyBeaconTests/MyBeaconTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		AB2C1ACC195095F4003D8BD4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyBeacon.app/MyBeacon";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MyBeacon/MyBeacon-Prefix.pch";
-				INFOPLIST_FILE = "MyBeaconTests/MyBeaconTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -634,15 +475,6 @@
 			buildConfigurations = (
 				AB2C1AC8195095F4003D8BD4 /* Debug */,
 				AB2C1AC9195095F4003D8BD4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AB2C1ACA195095F4003D8BD4 /* Build configuration list for PBXNativeTarget "MyBeaconTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AB2C1ACB195095F4003D8BD4 /* Debug */,
-				AB2C1ACC195095F4003D8BD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

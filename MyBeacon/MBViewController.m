@@ -132,12 +132,7 @@ typedef enum {
         [self startRotating];
         [sender setTitle:@"stop listening" forState:UIControlStateNormal];
         
-        
     } else {
-        //[[MBBeaconListener instance] stopListening];
-        //[[BPBeaconListener instance] stopListening];
-        //[[BPBeaconListener instance] stopUpdating];
-        //[[MBPKBeaconListener instance] stopListening];
         [(id)[[self listenerClass] instance] startListening];
         [self stopRotating];
         [self showView:self.advertising];
