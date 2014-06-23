@@ -7,7 +7,7 @@ Includes a build of [ibeacon-cli](https://github.com/RadiusNetworks/ibeacon-cli)
 
 To use ProximityKit install using cocoaPods from included podFile (`pod install`)
 
-//TO DO
+//TO DO  
 Blog/wiki explanation  
 Get local notifications to work  
 Reactivate everything
