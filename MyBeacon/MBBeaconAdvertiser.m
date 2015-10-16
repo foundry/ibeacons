@@ -82,11 +82,11 @@
 #pragma mark - peripheralManager delegate
 
 - (void)peripheralManagerDidUpdateState:(CBPeripheralManager *)peripheral {
-    NSLog(@"%s %@, %d",__func__,peripheral,peripheral.state);
+    NSLog(@"%s %@, %ld",__func__,peripheral,(long)peripheral.state);
 }
 
 - (void)peripheralManagerDidStartAdvertising:(CBPeripheralManager *)peripheral error:(NSError *)error {
-    NSLog(@"%s %@, %d",__func__,peripheral,peripheral.state);
+    NSLog(@"%s %@, %ld",__func__,peripheral,(long)peripheral.state);
     if (error) {
         NSLog(@"error: %@",error);
         [self.delegate advertisingFailedWithError:error];
@@ -117,6 +117,6 @@
 //}
 
 - (void) peripheralManagerIsReadyToUpdateSubscribers:(CBPeripheralManager *)peripheral {
-    NSLog(@"%s %@, %d",__func__,peripheral,peripheral.state);
+    NSLog(@"%s %@, %ld",__func__,peripheral,(long)peripheral.state);
 }
 @end

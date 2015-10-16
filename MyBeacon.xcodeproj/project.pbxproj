@@ -29,6 +29,7 @@
 		AB3E17E51957003100452F7D /* MBPKHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3E17E41957003100452F7D /* MBPKHelpers.m */; };
 		AB8236FF1951F54300822F91 /* MBBeaconListener.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8236FE1951F54300822F91 /* MBBeaconListener.m */; };
 		AB8237011952010500822F91 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8237001952010500822F91 /* MapKit.framework */; };
+		ABB2D7461BD1647600667D81 /* Launch.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB2D7451BD1647600667D81 /* Launch.xib */; settings = {ASSET_TAGS = (); }; };
 		DED57A24163F4D3299E8B3CC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B4A370FFB64715A3A30D9D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		AB8236FD1951F54300822F91 /* MBBeaconListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBBeaconListener.h; sourceTree = "<group>"; };
 		AB8236FE1951F54300822F91 /* MBBeaconListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBBeaconListener.m; sourceTree = "<group>"; };
 		AB8237001952010500822F91 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		ABB2D7451BD1647600667D81 /* Launch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Launch.xib; sourceTree = "<group>"; };
 		CB87848E8384C338D96F1DF1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +154,7 @@
 				AB2C1AB0195095F4003D8BD4 /* Images.xcassets */,
 				AB404A6A1952E3A6004A996B /* assets */,
 				AB2C1A9C195095F4003D8BD4 /* Supporting Files */,
+				ABB2D7451BD1647600667D81 /* Launch.xib */,
 			);
 			path = MyBeacon;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				AB2C1AE01950C10F003D8BD4 /* signal-2-76.png in Resources */,
 				AB2C1AB1195095F4003D8BD4 /* Images.xcassets in Resources */,
 				AB2C1AD41950A293003D8BD4 /* black-wifi-icon-hi.png in Resources */,
+				ABB2D7461BD1647600667D81 /* Launch.xib in Resources */,
 				AB2C1AD119509C4C003D8BD4 /* icons-radar-orange.jpg in Resources */,
 				AB2E67B91953038300364E86 /* ProximityKit.plist in Resources */,
 				AB2C1AE11950C10F003D8BD4 /* signal-2-152.png in Resources */,
@@ -443,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 592BB81DF062A5EB8C57560E /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyBeacon/MyBeacon-Prefix.pch";
@@ -459,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CB87848E8384C338D96F1DF1 /* Pods.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyBeacon/MyBeacon-Prefix.pch";

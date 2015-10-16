@@ -24,6 +24,8 @@ typedef enum {
 @property (nonatomic, strong) UIColor* colour;
 @property (nonatomic, assign) Class listenerClass;
 @property (nonatomic, assign) ListenerClassType listenerClassType;
+@property (nonatomic, assign) BOOL isListening;
+@property (nonatomic, assign) BOOL isAdvertising;
 @end
 
 @implementation MBViewController
@@ -60,8 +62,9 @@ typedef enum {
 }
 
 - (void)startAdvertising:(UIButton*)sender {
-    [self hideView:self.listening];
+  //  [self hideView:self.listening];
     [[MBBeaconAdvertiser instance] startAdvertising];
+    self.isAdvertising = YES;
     [self startRotating];
     [sender setTitle:@"stop advertising" forState:UIControlStateNormal];
 
@@ -69,8 +72,9 @@ typedef enum {
 
 - (void)stopAdvertising:(UIButton*)sender {
     [[MBBeaconAdvertiser instance] stopAdvertising];
+    self.isAdvertising = NO;
     [self showView:self.listening];
-    [self stopRotating];
+    if (!self.isListening) [self stopRotating];
     [sender setTitle:@"start advertising" forState:UIControlStateNormal];
 }
 
@@ -121,14 +125,16 @@ typedef enum {
 - (IBAction)listeningPressed:(UIButton*)sender {
     if ([[sender titleForState:UIControlStateNormal] isEqualToString:@"start listening"]) {
         [(id)[[self listenerClass] instance] startListening];
-        [self hideView:self.advertising];
+        self.isListening = YES;
+       // [self hideView:self.advertising];
         [self startRotating];
         [sender setTitle:@"stop listening" forState:UIControlStateNormal];
         
     } else {
         [(id)[[self listenerClass] instance] startListening];
-        [self stopRotating];
-        [self showView:self.advertising];
+        self.isListening = NO;
+        if (!self.isAdvertising) [self stopRotating];
+        //[self showView:self.advertising];
         [sender setTitle:@"start listening" forState:UIControlStateNormal];
     }
 
