@@ -11,7 +11,7 @@
 @implementation MBPKHelpers
 
 
-+ (void)logBeaconRegion:(PKIBeaconRegion*)region {
++ (void)logBeaconRegion:(RPKBeaconRegion*)region {
     NSLog(@"\nPKBEACON REGION\nuuid:%@, \nmajor:%ld minor:%ld\nid: %@ name: %@"
           ,region.uuid
           , (long)region.major
@@ -21,17 +21,17 @@
           );
 }
 
-+ (NSString*)regionState:(PKRegionState)state {
++ (NSString*)regionState:(RPKRegionState)state {
     NSString* result;
     switch (state) {
-        case PKRegionStateUnknown:
-            result = @"PKRegionStateUnknown";
+        case RPKRegionStateUnknown:
+            result = @"RPKRegionStateUnknown";
             break;
-        case PKRegionStateInside:
-            result = @"PKRegionStateInside";
+        case RPKRegionStateInside:
+            result = @"RPKRegionStateInside";
             break;
-        case PKRegionStateOutside:
-            result = @"PKRegionStateOutside";
+        case RPKRegionStateOutside:
+            result = @"RPKRegionStateOutside";
             break;
     }
     return result;

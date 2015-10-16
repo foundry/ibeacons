@@ -11,10 +11,10 @@
 #import "MBCLHelpers.h"
 #import "MBPKHelpers.h"
 
-@interface MBPKBeaconListener()<PKManagerDelegate>
+@interface MBPKBeaconListener()<RPKManagerDelegate>
 
 
-@property (strong, nonatomic) PKManager *beaconManager;
+@property (strong, nonatomic) RPKManager *beaconManager;
 
 @end
 
@@ -34,7 +34,7 @@
 - (instancetype) init {
     self = [super init];
     if (self) {
-        self.beaconManager = [PKManager managerWithDelegate:self];
+        self.beaconManager = [RPKManager managerWithDelegate:self];
     }
     return self;
 }
@@ -43,7 +43,7 @@
 - (void)startListening {
     NSLog(@"%s",__func__);
     [self.beaconManager start];
-    [self.beaconManager startRangingIBeacons];
+    [self.beaconManager startRangingBeacons];
    
 }
 
@@ -59,24 +59,24 @@
 #pragma mark -
 #pragma mark ProximityKit delegate methods
 
-- (void)proximityKit:(PKManager *)manager didEnter:(PKRegion *)region {
+- (void)proximityKit:(RPKManager *)manager didEnter:(RPKRegion *)region {
     NSLog(@"-----------------------");
     NSLog(@"%s",__func__);
     NSLog(@"entered %@", region);
-    [MBPKHelpers logBeaconRegion:(PKIBeaconRegion*)region];
+    [MBPKHelpers logBeaconRegion:(RPKBeaconRegion*)region];
 
 }
-- (void)proximityKit:(PKManager *)manager didExit:(PKRegion *)region {
+- (void)proximityKit:(RPKManager *)manager didExit:(RPKRegion *)region {
     NSLog(@"-----------------------");
     NSLog(@"%s",__func__);
     NSLog(@"exited %@", region);
-    [MBPKHelpers logBeaconRegion:(PKIBeaconRegion*)region];
+    [MBPKHelpers logBeaconRegion:(RPKBeaconRegion*)region];
 
     [self.delegate foundBeacon:nil inRegion:(CLBeaconRegion*)region];
 
 }
 
-- (void)proximityKit:(PKManager *)manager didFailWithError:(NSError *)error {
+- (void)proximityKit:(RPKManager *)manager didFailWithError:(NSError *)error {
     NSLog(@"-----------------------");
     NSLog(@"%s",__func__);
     NSLog(@"error %@",error);
@@ -84,24 +84,24 @@
 
 }
 
-- (void)proximityKit:(PKManager *)manager didDetermineState:(PKRegionState)state forRegion:(PKRegion *)region {
+- (void)proximityKit:(RPKManager *)manager didDetermineState:(RPKRegionState)state forRegion:(RPKRegion *)region {
     NSLog(@"-----------------------");
     NSLog(@"%s %@",__func__,[MBPKHelpers regionState:state]);
-    [MBPKHelpers logBeaconRegion:(PKIBeaconRegion*)region];
+    [MBPKHelpers logBeaconRegion:(RPKBeaconRegion*)region];
     
 
 }
 
-- (void)proximityKit:(PKManager *)manager
+- (void)proximityKit:(RPKManager *)manager
      didRangeBeacons:(NSArray *)beacons
-            inRegion:(PKRegion *)region {
+            inRegion:(RPKRegion *)region {
     NSLog(@"-----------------------");
     NSLog(@"%s %@ %@",__func__,region, beacons);
-    [MBPKHelpers logBeaconRegion:(PKIBeaconRegion*)region];
+    [MBPKHelpers logBeaconRegion:(RPKBeaconRegion*)region];
     CLBeacon* preferredBeacon = nil;
     if (beacons.lastObject) {
         CLProximity proximity = CLProximityFar;
-        for (PKIBeacon* pkBeacon in beacons) {
+        for (RPKBeacon* pkBeacon in beacons) {
             [MBCLHelpers logBeacon:pkBeacon.beacon];
             if (   pkBeacon.proximity != CLProximityUnknown
                 && pkBeacon.proximity <= proximity) {
@@ -113,7 +113,7 @@
     [self.delegate foundBeacon:preferredBeacon inRegion:(CLBeaconRegion*)region];
 }
 
-- (void)proximityKitDidSync:(PKManager *)manager {
+- (void)proximityKitDidSync:(RPKManager *)manager {
     NSLog(@"-----------------------");
     NSLog(@"%s",__func__);
 }

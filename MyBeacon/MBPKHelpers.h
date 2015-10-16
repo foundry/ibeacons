@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <PKManagerDelegate.h>
-#import <PKIBeaconRegion.h>
-#import <PKIBeacon.h>
+#import <RPKManagerDelegate.h>
+#import <RPKBeaconRegion.h>
+#import <RPKBeacon.h>
 
 @interface MBPKHelpers : NSObject
-+ (void)logBeaconRegion:(PKIBeaconRegion*)region;
-+ (NSString*)regionState:(PKRegionState)state;
++ (void)logBeaconRegion:(RPKBeaconRegion*)region;
++ (NSString*)regionState:(RPKRegionState)state;
 
 @end
